@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         else if(mAuth.getCurrentUser()==null)
             return;
 
-            adapter = new myPagerAdapter(getSupportFragmentManager());
+            adapter = new myPagerAdapter(getSupportFragmentManager(),new ChatFragment(),new GroupFragment());
             viewPager.setAdapter(adapter);
             tabLayout.setupWithViewPager(viewPager, true);
             tabLayout.setSelectedTabIndicatorColor(0xFF26968C);
@@ -112,12 +112,6 @@ public class MainActivity extends AppCompatActivity {
             tabLayout.getTabAt(0).setIcon(R.drawable.ic_person_black_24dp);
             tabLayout.getTabAt(1).setIcon(R.drawable.ic_group_black_24dp);
 
-        //Uploading image
-        Uri image ;
-                if(getIntent().getParcelableExtra("Uri")!= null)
-                {
-
-                }
     }
 
     private void InitializeFields() {
@@ -155,12 +149,19 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         //Toolbar Menu
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
+        switch (item.getItemId())
+        {
+            case R.id.Add_Friend:
+                break;
+            case R.id.FriendRequest:
+                break;
+        }
         return true;
     }
 

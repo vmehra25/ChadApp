@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -112,15 +113,17 @@ public class ChatFragment extends Fragment {
                         String name;
                         String  uid;
                         String url =null;
+                        String email;
                         name= data.child("name").getValue(String.class);
                         uid= data.getKey();
+                        email = data.child("email").getValue().toString();
 
                         if(data.child("image").exists()) {
                             url = data.child("image").getValue().toString();
                             while(url==null);
                         }
-                        while(name==null || uid==null);
-                        list.add(new String[]{name, uid, url});
+                        while(name==null || uid==null || email== null);
+                        list.add(new String[]{name, uid, url, email});
                     }
                     catch (Exception e){
                         Log.d("ChatFragmentGet",e.getMessage());

@@ -6,8 +6,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class myPagerAdapter extends FragmentStatePagerAdapter {
-    public myPagerAdapter(FragmentManager fm) {
+
+    Fragment frag1,frag2;
+
+    public myPagerAdapter(FragmentManager fm,Fragment frag1,Fragment frag2) {
         super(fm);
+        this.frag1 = frag1;
+        this.frag2 = frag2;
     }
 
     @Override
@@ -15,11 +20,9 @@ public class myPagerAdapter extends FragmentStatePagerAdapter {
         switch(i)
         {
             case 0:
-                ChatFragment chatFragment = new ChatFragment();
-                return chatFragment;
+                return frag1;
             case 1:
-                GroupFragment groupFragment = new GroupFragment();
-                return groupFragment;
+                return frag2;
         }
         return null;
     }
