@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account2Activity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/Account2_Ige"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:src="@drawable/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="350sp"
+        android:id="@+id/Account2_BG1"
+        android:background="@drawable/text_shape"
+        android:padding="20sp"
+        android:alpha="0.7"
+        />
+
+    <EditText
+        android:id="@+id/Account2_Name"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350sp"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:padding="15sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Tell us a little about yourself.."
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Account2_DP"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="160sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/user"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/Account2_BG2"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Account2_BG1"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/text_shape"
+        android:padding="20sp"
+        android:alpha="0.7"
+        />
+
+    <TextView
+        android:id="@+id/Account2_DOB"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Account2_BG1"
+        android:layout_marginTop="25sp"
+        android:padding="20sp"
+        android:hint="Date OF Birth"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        />
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Account2_BG2"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_shape"
+        android:text="Next"
+        android:alpha="0.6"
+        android:onClick="Next"
+        />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_shape"
+        android:onClick="SelectImage"
+        android:src="@drawable/ic_edit_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Account2_DP" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "694287739467",
+    "firebase_url": "https://whatsappclone-1db76.firebaseio.com",
+    "project_id": "whatsappclone-1db76",
+    "storage_bucket": "whatsappclone-1db76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694287739467:android:b50b948d3ffaab54",
+        "android_client_info": {
+          "package_name": "com.example.chadapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694287739467-jg87a8u3v26b0kdekepp0dp4e1oh921r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chadapp",
+            "certificate_hash": "c43da7dad7584c2ef032e8d69d435e77bb7f59b6"
+          }
+        },
+        {
+          "client_id": "694287739467-mmua4lvf5sjs4o8m9be63e5tfe28d0rq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQVs9uVLA_uMEQIQebb1vV3-4SMH7G-64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694287739467-mmua4lvf5sjs4o8m9be63e5tfe28d0rq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694287739467:android:e43c8facf7a6366e",
+        "android_client_info": {
+          "package_name": "com.example.whatsappclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694287739467-mmua4lvf5sjs4o8m9be63e5tfe28d0rq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQVs9uVLA_uMEQIQebb1vV3-4SMH7G-64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
