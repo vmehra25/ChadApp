@@ -49,7 +49,6 @@ public class Account2Activity extends AppCompatActivity {
     //Uploading image
     static String Url;
     static Uri backupUri = null;
-    String email;
     StorageReference storage = FirebaseStorage.getInstance().getReference();
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
@@ -116,7 +115,7 @@ public class Account2Activity extends AppCompatActivity {
 
     private void InitializeFields() {
 
-        email = getIntent().getStringExtra("Email");
+
         Name = findViewById(R.id.Account2_Name);
         Dob = findViewById(R.id.Account2_DOB);
         Dp = findViewById(R.id.Account2_DP);
@@ -182,8 +181,7 @@ public class Account2Activity extends AppCompatActivity {
 
             map.put("name",name);
             map.put("dob",dob);
-            if(email!= null || email!="")
-                map.put("email",email);
+
 
             //Uploading HashMap
             database.updateChildren((Map)map).addOnCompleteListener(new OnCompleteListener() {

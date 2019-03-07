@@ -113,17 +113,15 @@ public class ChatFragment extends Fragment {
                         String name;
                         String  uid;
                         String url =null;
-                        String email;
                         name= data.child("name").getValue(String.class);
                         uid= data.getKey();
-                        email = data.child("email").getValue().toString();
 
                         if(data.child("image").exists()) {
                             url = data.child("image").getValue().toString();
                             while(url==null);
                         }
-                        while(name==null || uid==null || email== null);
-                        list.add(new String[]{name, uid, url, email});
+                        while(name==null || uid==null );
+                        list.add(new String[]{name, uid, url});
                     }
                     catch (Exception e){
                         Log.d("ChatFragmentGet",e.getMessage());

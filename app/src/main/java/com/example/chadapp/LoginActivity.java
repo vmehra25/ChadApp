@@ -112,8 +112,6 @@ public class LoginActivity extends AppCompatActivity {
                 else
                 {
                     Intent intent = new Intent(LoginActivity.this,Account2Activity.class);
-                    String email = Email.getText().toString();
-                    intent.putExtra("Email",email);
                    // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 }
